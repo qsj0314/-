@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>\</title>
+  <style>
+    .qq{
+      width: 700px;
+      height: 500px;
+     background: url("bg2.png");
+      position: relative;
+
+    }
+    .qq::after{
+      height: 500px;
+      width: 100%;
+      /*position: absolute;*/
+      background: rgba(0,0,0,0.5);
+      /*border: 10px solid #000;*/
+      display: block;
+      content: '';
+    }
+  </style>
+</head>
+<body>
+<div class="qq"></div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+@import "../less/rem";
+.q_bg, .container::before{
+  //background: url("../assets/img/login/bg2.png") 0/cover fixed;
+}
+.q_bg{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container{
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  .px2rem(margin-top,140);
+  //width: 800px;
+  .px2rem(width,800);
+  //height: 600px;
+  .px2rem(height,600);
+  box-sizing: border-box;
+  text-align: center;
+  //border: 5px solid #000;
+}
+.forg{
+  //content: '';
+  position: absolute;
+  //top: 40px;
+  .px2rem(top,40px);
+  //right: 0;
+  //left: 0;
+  //bottom: 0;
+  .px2rem(right,0);
+  .px2rem(left,0);
+  .px2rem(bottom,0);
+  //background: rgba(1,1,1,0.4);
+  filter:blur(7px);
+
+
+  //border: 5px solid red;
+}
+.forg::after{
+  height: 100%;
+  width: 100%;
+  /*position: absolute;*/
+  background: rgba(0,0,0,0.5);
+  /*border: 10px solid #000;*/
+  display: block;
+  content: '';
+}
+.logo{
+  //width: 242px;
+  //height: 69px;
+  .px2rem(width,242);
+  .px2rem(height,69);
+  display: block;
+  background: url("../assets/img/login/logo.png") center/cover;
+  margin: 60px auto;
+  .px2rem(margin-top,60);
+  position: relative;
+}
+.q_p{
+  position: relative;
+  //font-size: 36px;
+  .px2rem(font-size,36);
+  color: #ffffff;
+  margin: 40px auto 38px;
+  .px2rem(margin-top,40);
+  .px2rem(margin-bottom,38);
+}
+input{
+  background: rgba(0,0,0,0);
+  display: block;
+  border: 2px solid #a1a1a1;
+  //width: 400px;
+  //height: 56px;
+  .px2rem(width,400);
+  .px2rem(height,56);
+}
+.q_phone,.q_lock,.q_submit{
+  position: relative;
+  //width: 400px;
+  //height: 56px;
+  .px2rem(width,400);
+  .px2rem(height,56);
+  margin: 0 auto;
+}
+.q_phone input,.q_lock input{
+  box-sizing: border-box;
+  //padding-left: 66px;
+  .px2rem(padding-left,66);
+}
+.q_lock{
+  //margin-top: 30px;
+  //margin-bottom: 30px;
+  .px2rem(margin-top,30);
+  .px2rem(margin-bottom,30);
+}
+
+.q_phone i{
+  //width: 24px;
+  //height: 33px;
+  .px2rem(width,24);
+  .px2rem(height,33);
+  display: block;
+  position: absolute;
+  //margin: 11px 26px 11px 16px;
+  .px2rem(margin-top,11);
+  .px2rem(margin-right,26);
+  .px2rem(margin-bottom,11);
+  .px2rem(margin-left,16);
+  background: url("../assets/img/login/phone.png") center/cover;
+}
+
+.q_lock i{
+  //width: 24px;
+  //height: 33px;
+  .px2rem(width,24);
+  .px2rem(height,33);
+  display: block;
+  position: absolute;
+  //margin: 11px 26px 11px 16px;
+  .px2rem(margin-top,11);
+  .px2rem(margin-right,26);
+  .px2rem(margin-bottom,11);
+  .px2rem(margin-left,16);
+  background: url("../assets/img/login/lock.png") center/cover;
+}
+

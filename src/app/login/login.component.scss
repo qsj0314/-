@@ -1,0 +1,79 @@
+body,html{
+  /*width: 100%;*/
+  /*height: 100%;*/
+}
+body,.container::before{
+  background: url("../../assets/img/login/bg1.png") 0/cover fixed;
+}
+.container{
+  position: relative;
+  overflow: hidden;
+  margin: 120px auto 0px;
+  width: 800px;
+  height: 600px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container::before{
+  content: '';
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /*background: rgba(0,0,0,0.4);*/
+  /*background: hsla(1,0%,100%,.3);*/
+  filter:blur(7px);
+  margin: -30px;
+  z-index: -99999999;
+}
+.logo{
+  width: 242px;
+  height: 69px;
+  background: url("../../assets/img/login/logo.png");
+  margin: 60px auto;
+}
+.q_p{
+  font-size: 36px;
+  color: #ffffff;
+  margin: 40px auto 38px;
+}
+input{
+  background: rgba(0,0,0,0);
+  display: block;
+  border: 2px solid #a1a1a1;
+  width: 400px;
+  height: 56px;
+}
+.q_phone,.q_lock,.q_submit{
+  position: relative;
+  width: 400px;
+  height: 56px;
+  margin: 0 auto;
+}
+.q_phone input,.q_lock input{
+  box-sizing: border-box;
+  padding-left: 66px;
+}
+.q_lock{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.q_phone i{
+  width: 24px;
+  height: 33px;
+  display: block;
+  position: absolute;
+  margin: 11px 26px 11px 16px;
+  background: url("../../assets/img/login/phone.png");
+}
+
+.q_lock i{
+  width: 24px;
+  height: 33px;
+  display: block;
+  position: absolute;
+  margin: 11px 26px 11px 16px;
+  background: url("../../assets/img/login/lock.png");
+}
